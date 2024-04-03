@@ -18,3 +18,4 @@ const DefaultBox = ({ children }) => {
 	);
 };
 
+module.exports = DefaultBox;
