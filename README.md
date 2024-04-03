@@ -1,4 +1,4 @@
-# solana-jupiter-bot
+# solana-trading-bot
 
 > CAUTION! Use at Your own risk! I take no responsibility for your transactions!
 
