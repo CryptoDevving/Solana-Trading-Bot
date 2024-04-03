@@ -24,11 +24,6 @@ All trades are stored in trades history and will be shown in the table. Table is
 
 💡 UI elements can be hidden or shown using hotkeys (read below).
 
-> THIS README IS NOT COMPLETED YET.
-
-![](https://github.com/pmioduszewski/solana-jupiter-bot/blob/main/gif1.gif)
-![](https://github.com/pmioduszewski/solana-jupiter-bot/blob/main/gif2.gif)
-
 ## Install
 
 ```bash
