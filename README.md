@@ -1,94 +1,86 @@
-Contribution: 2023-03-15 20:00
+# solana-jupiter-bot
 
-Contribution: 2023-03-15 20:01
+> CAUTION! Use at Your own risk! I take no responsibility for your transactions!
 
-Contribution: 2023-03-15 20:02
+> ⚠️ EPILEPSY WARNING - CLI UI is constantly refreshed and may be disruptive for sensitive ppl
 
-Contribution: 2023-03-18 20:00
+# WTF is this?
 
-Contribution: 2023-03-18 20:01
+It's a trading bot that can trade on Solana blockchain by utilizing Jupiter Agregator SDK.
+There are two parts:
 
-Contribution: 2023-03-20 20:00
+- config wizard
+- trading bot
 
-Contribution: 2023-03-21 20:00
+With Config wizard You can easly setup your trading strategy.
 
-Contribution: 2023-03-24 20:00
+### CLI UI
 
-Contribution: 2023-03-24 20:01
+📊 Bot have CLI UI which helps You monitor your trading strategy.
 
-Contribution: 2023-03-24 20:02
+CLI UI have current simulated profit chart and latency chart. Latency chart shows You the time taken to computate routes with Jupiter SDK.
 
-Contribution: 2023-03-28 20:00
+All trades are stored in trades history and will be shown in the table. Table is limited to 5 entries, but history stores all trades.
 
-Contribution: 2023-04-04 20:00
+💡 UI elements can be hidden or shown using hotkeys (read below).
 
-Contribution: 2023-04-04 20:01
+> THIS README IS NOT COMPLETED YET.
 
-Contribution: 2023-04-04 20:02
+![](https://github.com/pmioduszewski/solana-jupiter-bot/blob/main/gif1.gif)
+![](https://github.com/pmioduszewski/solana-jupiter-bot/blob/main/gif2.gif)
 
-Contribution: 2023-04-05 20:00
+## Install
 
-Contribution: 2023-04-05 20:01
+```bash
+$ git clone https://github.com/pmioduszewski/solana-jupiter-bot && cd solana-jupiter-bot
+$ yarn
+```
 
-Contribution: 2023-04-06 20:00
+Set Your wallet private key in `.env` file
 
-Contribution: 2023-04-06 20:01
+```js
+SOLANA_WALLET_PRIVATE_KEY =
+	hgq847chjjjJUPITERiiiISaaaAWESOMEaaANDiiiIwwWANNAbbbBErrrRICHh;
+```
 
-Contribution: 2023-04-07 20:00
+\*[optionally] set default RPC (it can be also set in wizard)
 
-Contribution: 2023-04-07 20:01
+```js
+SOLANA_WALLET_PRIVATE_KEY=hgq847chjjjJUPITERiiiISaaaAWESOMEaaANDiiiIwwWANNAbbbBErrrRICHh
+DEFAULT_RPC=https://my-super-lazy-rpc.gov
+```
 
-Contribution: 2023-04-11 20:00
+## USAGE
 
-Contribution: 2023-04-12 20:00
+```
+$ solana-jupiter-bot:
 
-Contribution: 2023-04-12 20:01
+  Usage
+    $ yarn start
+      This will open Config Wizard and start bot
 
-Contribution: 2023-04-12 20:02
+    $ yarn trade
+      Start Bot and Trade with latest config
+```
 
-Contribution: 2023-04-14 20:00
+Have fun!
 
-Contribution: 2023-04-14 20:01
+## Hotkeys
 
-Contribution: 2023-04-17 20:00
+While bot is running You can use some hotkeys that will change behaviour of bot or UI
 
-Contribution: 2023-04-17 20:01
+`[H]` - show/hide Help
 
-Contribution: 2023-04-17 20:02
+`[CTRL] + [C]` - obviously it will kill the bot
 
-Contribution: 2023-04-19 20:00
+`[E]` - force execution with current setup & profit
 
-Contribution: 2023-04-19 20:01
+`[R]` - revert back last swap
 
-Contribution: 2023-04-19 20:02
+`[L]` - show/hide latency chart (of Jupiter `computeRoutes()`)
 
-Contribution: 2023-04-26 20:00
+`[P]` - show/hide profit chart
 
-Contribution: 2023-04-26 20:01
+`[T]` - show/hide trade history table \*_table isn't working yet_
 
-Contribution: 2023-04-26 20:02
-
-Contribution: 2023-04-28 20:00
-
-Contribution: 2023-04-28 20:01
-
-Contribution: 2023-05-01 20:00
-
-Contribution: 2023-05-01 20:01
-
-Contribution: 2023-05-06 20:00
-
-Contribution: 2023-05-06 20:01
-
-Contribution: 2023-05-06 20:02
-
-Contribution: 2023-05-07 20:00
-
-Contribution: 2023-05-07 20:01
-
-Contribution: 2023-05-09 20:00
-
-Contribution: 2023-05-09 20:01
-
-Contribution: 2023-05-09 20:02
-
+`[S]` - simulation mode switch (enable/disable trading)
