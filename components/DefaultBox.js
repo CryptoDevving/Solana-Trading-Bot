@@ -17,3 +17,4 @@ const DefaultBox = ({ children }) => {
 		</Box>
 	);
 };
+
