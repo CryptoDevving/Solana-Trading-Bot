@@ -122,3 +122,15 @@ const swap = async (jupiter, route) => {
 		console.log("Swap error", error);
 	}
 };
+
+const failedSwapHandler = (tx, tradeEntry, route) => {};
+
+const successSwapHandler = (tx, tradeEntry, tokenA, tokenB) => {};
+
+const pingpongMode = async (jupiter, tokenA, tokenB) => {};
+
+const watcher = async (jupiter, tokenA, tokenB) => {};
+
+const run = async () => {};
+
+run();
